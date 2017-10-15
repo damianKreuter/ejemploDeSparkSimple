@@ -1,0 +1,14 @@
+{{#partial "contenido"}}
+	<tr class="encabezado">
+		<th class="fila1">Cuenta</th>
+		<th class="fila2">Periodoss</th>
+	</tr>
+	{{#each cuentas}}
+	<tr class="cuerpoTabla">
+		<td class="fila1">{{nombre}}</td>
+		<td class="fila2"><a href="/empresas/{{empresas}}"> Ver Periodos</td>
+	</tr>
+	{{/each}}
+
+{{/partial}}
+{{>empresas.hbs}}
